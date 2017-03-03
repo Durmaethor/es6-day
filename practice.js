@@ -132,18 +132,33 @@ function greeter( name = 'Anonymous' ) {
 // and returns number to the power of exponent.
 // if no exponent is passed, the exponent should be two
 
+function toPower( number, exponent = 2 ) {
+	return Math.pow( number, exponent );
+}
 
 // using rest parameters, write a function named evenOdd that takes in
 // any number of parameters and returns an object with two properties - even and odd.
 // this function should check each parameter and push it to the appropriate property.
 
+function evenOdd( ...nums ) {
+	return nums.reduce( ( pv, cr ) => {
+		if ( cr % 2 === 0 ) {
+			pv.even.push( cr );
+		} else {
+			pv.odd.push( cr );
+		}
+		return pv;
+	}, { even: [], odd: [] } );
+}
 
 
 // write a function named multiply that takes in a num parameter and an arbitrary amount of
 // additional numbers. This function should return an array of each additional number
 // multiplied by num.
 
-
+function multiply( num, ...numbers ) {
+	return numbers.map( int => int * num );
+}
 
 // do not modify
 const bits = [ 2, 4, 8, 16, 32, 64, 128 ];
