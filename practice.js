@@ -61,6 +61,10 @@ const me = {
 // using computed property names create a new object named flipped where the keys are your first and last name
 // and the values are "first" and "last"
 
+var flipped = {
+	[first]: 'first',
+	[last]: 'last'
+}
 
 //////////////////////////////
 /* ASSIGNMENT DESTRUCTURING */
@@ -76,8 +80,7 @@ const destructuring = {
 // using assignment destructuring create two new variables, objects and arrays,
 // with the values taken from the above object
 
-
-
+var {objects, arrays, numbers} = destructuring;
 
 // do not modify
 const vocabAgain = [ "let", "const", "destructuring", "spread", "rest", "arrow function" ];
