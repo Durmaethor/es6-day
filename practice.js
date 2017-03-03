@@ -123,7 +123,7 @@ const currentJS = whatToUse(...jsVersions);
 ///////////////
 
 // modify greeter to greet Anonymous if no name is passed.
-function greeter( name ) {
+function greeter( name = 'Anonymous' ) {
 	return `Hi ${ name }!`
 }
 
