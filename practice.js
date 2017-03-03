@@ -88,7 +88,7 @@ const vocabAgain = [ "let", "const", "destructuring", "spread", "rest", "arrow f
 // using assignment destructuring, create three variables notVar, alsoNotVar, and everythingElse
 // notVar should be "let", alsoNotVar should be "const", and everythingElse should contain the rest of the array.
 
-
+const [notVar, alsoNotVar, ...everythingElse] = vocabAgain;
 
 ////////////
 /* ARRAYS */
