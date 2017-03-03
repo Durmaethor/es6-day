@@ -116,7 +116,7 @@ function whatToUse( past, present, future ) {
 // using the spread operator, pass each element of jsVersions as an individual argument to whatToUse
 // and save the return value in a variable named currentJS.
 
-
+const currentJS = whatToUse(...jsVersions);
 
 ///////////////
 /* FUNCTIONS */
