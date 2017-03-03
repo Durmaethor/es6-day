@@ -11,16 +11,19 @@ if ( true ) {
 
 // declare a variable named noChange that cannot be re-assigned and give it a value of 100.
 
+const noChange = 100;
 
 // declare a new constant named vocab with the value of [ "let", "var", "destructuring", "spread", "rest" ]
 
-
+const vocab = [ "let", "var", "destructuring", "spread", "rest" ];
 // change "var" to "const" at index 1 of vocab
+
+vocab [1] = 'const';
 
 
 // add "arrow function" to the end of vocab
 
-
+vocab [5] = 'arrow function';
 
 ///////////////////////
 /* TEMPLATE LITERALS */
@@ -28,10 +31,12 @@ if ( true ) {
 
 // Declare 2 new variables, first and last, and assign them your first and last name.
 
-
+var first = 'Ryan';
+var last = 'Kramer';
 
 // Declare the variable fullName and set it equal to your full name using template literals
 
+var fullName = `${first} ${last}`;
 
 
 //////////////////////
@@ -43,7 +48,15 @@ if ( true ) {
 // and lovesDevMountain should be set to true.
 // learnES6 should be a method created with object method shorthand that returns "This is awesome!"
 
+const me = {
+	first,
+	last,
+	lovesDevMountain: true,
+	learnES6() {
+		return 'This is awesome!';
+	}
 
+}
 
 // using computed property names create a new object named flipped where the keys are your first and last name
 // and the values are "first" and "last"
